@@ -33,7 +33,7 @@ public class StudentController {
 		 return "Öğrenci Silinmiştir...";
 	}
 
-	@RequestMapping(path = "/add",method = RequestMethod.PUT)
+	@RequestMapping(path = "/add",method = RequestMethod.POST)
 	public String addStudent(@RequestBody Student student) {
 		 studentService.addStudent(student);
 		 return "Öğrenci Eklenmiştir...";
